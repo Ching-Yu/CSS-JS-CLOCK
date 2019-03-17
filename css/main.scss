@@ -1,0 +1,49 @@
+$green: #293b29;
+
+body {
+  background: $green;
+}
+
+.wrapper {
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+  margin-top: 225px;
+  background-image: url(../img/clock-bg.svg);
+  background-position: 50% 50%;
+  position: relative;
+}
+
+.hour-hand {
+  background-image: url(../img/hour-hand.svg);
+  position: absolute;
+  top: 49%;
+  left: 175px;
+  width: 72px;
+  height: 8px;
+//   transform: rotate(-90deg);
+  transform-origin: left;
+  z-index: 3;
+}
+
+.min-hand {
+  background-image: url(../img/minute-hand.svg);
+  position: absolute;
+  top: 50.5%;
+  left: 173px;
+  width: 8px;
+  height: 96px;
+  transform-origin: top;
+  transform: rotate(180deg);
+}
+
+.sec-hand {
+  background-image: url(../img/second-hand.svg);
+  position: absolute;
+  top: 50%;
+  left: 168px;
+  width: 12px;
+  height: 126px;
+  transform-origin: top;
+//   transition: all .3s ease-in-out
+}
